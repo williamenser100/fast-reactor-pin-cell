@@ -1,0 +1,23 @@
+# Used by: rsync -av --exclude-from=.rsyncignore ./serpent_project/ megaraptor:~/serpent_project/
+# Upload only what the cluster needs; never push laptop copies of Serpent output back over the cluster's.
+.git/
+.gitignore
+.rsyncignore
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+analysis/
+tests/
+results/
+logs/
+*_res.m
+*_det*.m
+*_dep.m
+*.out
+*.err
+*.seed
+*_geom*.png
+*_mesh*.png
