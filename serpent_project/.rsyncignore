@@ -1,4 +1,4 @@
-# Used by: rsync -av --exclude-from=.rsyncignore ./serpent_project/ megaraptor:~/serpent_project/
+# Used from Projektet/ by: rsync -av --exclude-from=serpent_project/.rsyncignore ./serpent_project/ megaraptor:~/serpent_project/
 # Upload only what the cluster needs; never push laptop copies of Serpent output back over the cluster's.
 .git/
 .gitignore

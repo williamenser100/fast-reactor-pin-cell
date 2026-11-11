@@ -1,14 +1,6 @@
+.DS_Store
+.gstack/
+playground/
 __pycache__/
 *.py[cod]
 .venv/
-.pytest_cache/
-.ipynb_checkpoints/
-.DS_Store
-
-# runs/: track case lists and Serpent result files (the cluster has no backups); ignore inputs, logs and plots
-runs/**
-!runs/**/
-!runs/.gitkeep
-!runs/*/case_list.txt
-!runs/**/*_res.m
-!runs/**/*_det*.m
