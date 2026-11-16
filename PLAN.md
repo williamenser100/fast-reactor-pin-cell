@@ -101,9 +101,17 @@ Seen from above, from the centre outwards:
 
 ```
  fuel pellet   ->  thin gap   ->  steel cladding tube  ->  liquid sodium  ->  hexagonal edge (the "mirror")
- (U,Pu) oxide      (empty)        holds the fuel in       carries heat away
- about 1 cm wide                  about 0.5 mm thick
+ (U,Pu) oxide      helium gas     holds the fuel in       carries heat away
+ about 1 cm wide   (we model      about 0.5 mm thick
+                   it as empty)
 ```
+
+### Why there is a thin gap
+
+The pellet expands when hot and swells as fission makes new atoms, some of them gases.
+The gap gives it room to grow without pushing on and cracking the steel tube, which keeps radioactive material inside the rod.
+The gap is filled with helium, which does not react and carries heat well for a gas.
+Helium is so thin that neutrons barely notice it, so we model the gap as empty.
 
 ### What to do
 
@@ -119,6 +127,7 @@ Seen from above, from the centre outwards:
 - What is a pin cell, and why is it enough to simulate one?
 - What does the mirror boundary do, and why is our $k_\infty$ higher than the $k$ of a real reactor?
 - What is each layer made of, and what is its job?
+- Why is there a gap between the pellet and the tube, and why can we model it as empty?
 - Where did our numbers come from?
 
 > **Prompt for Claude:** *"We are doing Step 2 of PLAN.md. Read the NEA benchmark in docs/, propose the baseline numbers for our pin cell with page references, explain each one in plain language, and log them in notes/decisions_log.md. Then help us write notes/02_our_model.md."*
